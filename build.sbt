@@ -13,7 +13,7 @@ lazy val settings = Seq(
   libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.1" % "test"
 )
 
-addCommandAlias("blah", ";clean;test")
+addCommandAlias("testAndClean", ";clean;test")
 
 import complete.Parser._
 import complete.Parsers._
