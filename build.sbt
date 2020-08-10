@@ -11,12 +11,8 @@ val p9 = project.settings(settings)
 
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oGK")
 
-lazy val NoConcurrency = Tags.Tag("no concurrency for integration tests")
 lazy val settings = Seq(
-  libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0-M2" % "test",
-  fork in IntegrationTest := true,
-  tags in test += NoConcurrency      -> 1,
-  concurrentRestrictions in Global += Tags.limit(NoConcurrency, 1)
+  libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.1" % "test"
 )
 
 addCommandAlias("blah", ";clean;test")
