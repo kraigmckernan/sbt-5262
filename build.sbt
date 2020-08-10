@@ -9,8 +9,6 @@ val p7 = project.settings(settings)
 val p8 = project.settings(settings)
 val p9 = project.settings(settings)
 
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oGK")
-
 lazy val settings = Seq(
   libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.1" % "test"
 )
