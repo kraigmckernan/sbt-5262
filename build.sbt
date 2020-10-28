@@ -10,7 +10,7 @@ val p8 = project.settings(settings)
 val p9 = project.settings(settings)
 
 lazy val settings = Seq(
-  libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.1" % "test"
+  libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
 )
 
 addCommandAlias("testAndClean", ";clean;test")
